@@ -31,5 +31,5 @@ Now you can create a table, add id "getBTC" to let the script know which table t
   </table>
 ```
 
-The amount of "<tr></tr>" means how much bitcoin transactions he needs to show. In this case we recieve the 10 latest transactions (live update)
+The amount of table rows means how much bitcoin transactions he needs to show. In this case we recieve the 10 latest transactions (live update)
 
