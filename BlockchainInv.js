@@ -87,7 +87,7 @@ function webSocketConnect(c) {
   try {
     function d() {
       try {
-        var f = "wss://ws.blockchain.info/inv";
+        var f = "wss://ws.blockchain.info/inv"; // bitcoin server
         console.log("Connect " + f);
         ws = new WebSocket(f);
         if (!ws) {
