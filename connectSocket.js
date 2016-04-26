@@ -2,6 +2,7 @@ function updateTimes() {
   var a = new Date().getTime() / 1000;
   $("td[data-time]").each(function(b) {
     var e = parseInt($(this).data("time"));
+    
     if (e == 0) {
       $(this).text("")
     }
