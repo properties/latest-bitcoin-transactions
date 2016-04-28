@@ -7,9 +7,13 @@ function updateTimes() {
       $(this).text("")
     }
     var d = a - e;
+    
     if (d < 60) {
+      
       $(this).text("1 second ago")
+      
     } else {
+      
       if (d < 3600) {
         var c = (parseInt(d / 60) > 1) ? "s" : "";
         $(this).text(parseInt(d / 60) + " minute" + c)
