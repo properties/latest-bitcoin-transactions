@@ -10,7 +10,7 @@ function updateTimes() {
     
     if (d < 60) {
       
-      $(this).text("1 second ago")
+      $(this).text("now")
       
     } else {
       
