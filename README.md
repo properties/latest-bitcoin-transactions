@@ -4,7 +4,7 @@ A jquery script to get the latest bitcoin transactions
 A simple light-weighted jquery/js script to view the latest bitcoin transactions. Latest transactions will auto update.
 Using: wss://ws.blockchain.info/inv
 
-![alt tag](http://gy.ee/SJFJ.gif)
+![alt tag](http://gy.ee/SJFJ.gif)-
 
 How to use:
 
