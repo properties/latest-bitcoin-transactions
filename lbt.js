@@ -40,7 +40,7 @@
     Socket.onmessage = function(Msg) {
       var Json = $.parseJSON(Msg.data).x;
       var Hash = Json.hash.substring(0, 80);
-      var Html = $("<tr><td><div>" + Hash + '</div></td><td><div><b>' + Json.value / 100000000 + " BTC</b></div></td></tr>");
+      var Html = $('<tr><td><div><a target=_blank href="https://blockchain.info/tx/' + Hash + '">' + Hash + '</a></div></td><td><div><b>' + Json.value / 100000000 + ' BTC</b></div></td></tr>');
 
       Html.insertAfter($(Table + " tr:first")).find("div").hide().slideDown("slow");
       $("#getBTC tr:last-child").remove();
