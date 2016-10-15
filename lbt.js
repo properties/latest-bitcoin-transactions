@@ -10,8 +10,7 @@
     try {
       function Connect() {
         try {
-          var Server = "wss://ws.blockchain.info/inv";
-          Ws = new WebSocket(Server);
+          Ws = new WebSocket("wss://ws.blockchain.info/inv");
           if (!Ws) {
             return;
           }
