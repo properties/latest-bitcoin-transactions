@@ -1,35 +1,22 @@
 # latest-bitcoin-transactions
-A jquery script to get the latest bitcoin transactions
+A lightweight javascript(jquery) script using websocket and Blockchain to recieve the latest Bitcoin transactions (Auto update).
 
-A simple light-weighted jquery/js script to view the latest bitcoin transactions. Latest transactions will auto update.
-Using: wss://ws.blockchain.info/inv
+![transactions](https://gy.ee/ab)
 
-![alt tag](http://gy.ee/SJFJ.gif)-
+How to use it:
 
-How to use:
-
-Add 3 scripts in your head
+1. Add jQuery and the lbt.js to your head/body:
 ```sh
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script type="text/javascript" src="connectSocket.js" ></script>
-  <script type="text/javascript" src="BlockchainInv.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="lbt.js"></script>
 ```
-
-Now you can create a table, add id "getBTC" to let the script know which table to use.
+2. Add a table with id getBTC (or edit id in lbt.js) with x amount of table rows (x = amount to show on page)
 ```sh
   <table id="getBTC">
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
   </table>
 ```
-
-The amount of table rows means how much bitcoin transactions he needs to show. In this case we recieve the 10 latest transactions (live update)
-
